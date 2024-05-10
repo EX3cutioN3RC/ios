@@ -363,7 +363,7 @@ func Enumerate() ([]Backup, error) {
 		dir = path.Join(home, "Apple Computer\\MobileSync\\Backup")
 	} else {
 		home = os.Getenv("HOME")
-		dir = path.Join(home, "Library/Application Support/MobileSync/Backup")
+		dir = path.Join(home, "Desktop/Backup")
 	}
 	r, err := os.Open(dir)
 	if err != nil {
