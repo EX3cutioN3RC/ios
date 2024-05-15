@@ -399,7 +399,7 @@ func Open(guid string) (*MobileBackup, error) {
 		backup.Dir = path.Join(home, "Apple Computer\\MobileSync\\Backup", guid)
 	} else {
 		home = os.Getenv("HOME")
-		backup.Dir = path.Join(home, "Library/Application Support/MobileSync/Backup", guid)
+		backup.Dir = path.Join(home, "Desktop/Backup", guid)
 	}
 
 	tmp := path.Join(backup.Dir, "Manifest.plist")
